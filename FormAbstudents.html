@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Форма для введення інформації про студента</title>
+    </head>
+    <body style="text-align: center">
+        <h2>Заява</h2>
+        <form id="Інформаційна форма про студента">
+            <label for="Ім'я">Ім'я:</label>
+            <input
+                required
+                placeholder="Ім'я"
+                name="Ім'я"
+                id="first_name"
+                type="text"
+                maxlength="20"
+            />
+            <br />
+            <br />
+            <label for="Прізвище">Прізвище:</label>
+            <input
+                required
+                placeholder="Прізвище"
+                name="Прізвище"
+                id="last_name"
+                type="text"
+                maxlength="20"
+            />
+            <br /><br />
+            <label for="email">Email address:</label>
+            <input required placeholder="yourEmail@gmail.com" type="email" name="email" id="email" />
+            <br /><br />
+            <label for="Номер телефону"> Номер:</label>
+            <input
+                required
+                placeholder="097-314-1234"
+                type="tel"
+                name="phone"
+                id="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
+            <br />
+            <br />
+            <button type="submit">Submit</button>&nbsp;&nbsp;
+            <button type="reset">Clear form</button>
+        </form>
+        <hr />
+        <button><a href="./index.html">Back</a></button>
+    </body>
+</html>
